@@ -1,3 +1,8 @@
+
+<!-- This project is developed as part of Assignment A02 using HTML5 and CSS. 
+ Interactive hover effects have been applied to all menus, buttons, and social media icons. 
+ The layout is constrained to a maximum width of 1600px for big scree such as Laptops and for
+  Resposive a max-width of 576px . Minor color variations may exist compared to the original content. The font Family is INTER  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,24 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
    </head>
 <body>
 
-<!-- navBar -->
+<!-- =============#navBar ================-->
 
  <header class="header">
     <nav class="navBar">
         
         <div class="logo">
-            <h1>Tech<span style="color: #fb09b4">Wave</span>
+            <h1>Tech<span style="color: #fb09b4">Wave</span></h1>
         </div>
         <div class="navM">
-            <p>About</p>
-            <p>Episodes</p>
-            <p>Host</p>
+            <p><a class="btnHover" href="#" >About</a></p>
+            <p><a class="btnHover" href="#">Episodes</a> </p>
+            <p><a class="btnHover" href="#">Host</a> </p>
         </div>
-        <div class="primaryBtn">
+        <div class="primaryBtn btnHover">
             <button>Subscribe<img src="./assets/ArrowRight.png" alt="" srcset=""></button>
         </div>
         <div>
@@ -32,25 +40,27 @@
     </nav>
  </header>
 
-<!-- #Banner section -->
+<!-- ================#Banner section=============== -->
  <section class="baner">
     <div class="heroCircle">
         <img src="./assets/hero-circle.png" alt="">
         <div class="microPhone">
             <img src="./assets/microphone.png" alt="">
         </div>
+        <img id="newImg" src="./assets/new.png">
         <div class="heroHeadding">
             <h1>TechWave</h1>
             
             <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
             <div class="btn">
-            <button class="heroBtn1"><img src="./assets/spotify.png" alt=""> Listen On Spotify</button>
-            <button class="heroBtn2"><img src="./assets/message.png" alt="">Subscribe</button>
+            <button class="heroBtn1 btnHover"><img src="./assets/spotify.png" alt=""> Listen On Spotify</button>
+            <button class="heroBtn2 btnHover"><img src="./assets/message.png" alt="">Subscribe</button>
             </div>  
         </div>
     </div>
 
  </section>
+ <!-- ===============#ABOUT===============-->
 <section class="about">
     <div class="aboutHead">
         <h2>About the Podcast</h2>
@@ -58,6 +68,7 @@
 We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
 and share stories of personal growth from industry leaders.
 </p>
+
 <p id="last">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
     </div>
     <hr >
@@ -71,7 +82,7 @@ and share stories of personal growth from industry leaders.
             <p>Episodes Published</p>
         </div>
         <div class="num">
-            <h3>4.9*</h3>
+            <h3><img src="./assets/4.9★.png" ></h3>
             <p>Average Rating</p>
         </div>
         <div class="num">
@@ -81,6 +92,7 @@ and share stories of personal growth from industry leaders.
 
     </div>
 </section>
+<!-- ===============#TakeWave=====================-->
 <section class="takeWave">
     <div class="text">
         <h1>Why Choose TechWave</h1>
@@ -88,24 +100,24 @@ and share stories of personal growth from industry leaders.
     <div class="gridBox">
         <div class="box1">
             <img src="./assets/headphone.png" alt="" srcset="">
-            <h3>Premium Audio Quality</h3>
+            <h3 class="commonStyle">Premium Audio Quality</h3>
             <p>Experience crystal-clear sound with professional-grade 
                 recording equipment and expert audio engineering. Every episode is mastered 
                 for optimal listening across all devices and platforms.</p>
         </div>
         <div class="box2">
             <img src="./assets/device.png" alt="" srcset="">
-            <h3>Mobile Friendly</h3>
+            <h3 class="commonStyle">Mobile Friendly</h3>
             <p>Listen on the go with seamless mobile experience and offline downloads.</p>
         </div>
         <div class="box3">
             <img src="./assets/location.png" alt="" srcset="">
-            <h3>Global Community</h3>
+            <h3 class="commonStyle">Global Community</h3>
             <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
         </div>
         <div class="box4">
             <img src="./assets/zap-fast.png" alt="" srcset="">
-            <h3>Exclusive Interviews</h3>
+            <h3 class="commonStyle">Exclusive Interviews</h3>
             <p>Get unprecedented access to industry titans, startup founders, 
                 and tech visionaries. Our host<br> secures exclusive 
                 conversations you won't find anywhere else, diving deep into their<br> journeys,
@@ -113,34 +125,65 @@ and share stories of personal growth from industry leaders.
         </div>
         <div class="box5">
             <img src="./assets/resource.png" alt="" srcset="">
-            <h3>Rich Resources</h3>
+            <h3 class="commonStyle">Rich Resources</h3>
             <p>Access show notes, transcripts, and additional learning materials for
                  every episode. Access show notes, transcripts, and additional learning materials for every episode.   
             </p>
         </div>
     </div>
 </section>
+<!-- =====================#FEATRUED=====================-->
 <section class="featured">
     
         <h2>Featured Episodes</h2>
     <div class="content">
         <div class="mediaContent">
-            <iframe src="https://www.youtube.com/watch?v=5NqeqiqNSKc"></iframe>
+            <iframe width="380px" height="214px"
+            src="https://www.youtube.com/embed/z58Sh8IndkY?si=ZGkAZkiC_gg2fLX3" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+
+
+            </iframe>
            <h2>The Future of AI in Everyday Life</h2>
             <p>Exploring how artificial intelligence is transforming our 
                 daily routines and what to expect in the next decade.</p>
+                <p><img src="./assets/clock.png"><span style="color:#00ff88 ;">42 min</span></p>
         </div>
         <div class="mediaContent">
-            <iframe src=""></iframe>
+            <iframe width="380px" height="214px"
+            src="https://www.youtube.com/embed/MQpotNI5NvQ?si=qKBWi20AxbsFV94q" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" 
+             allowfullscreen>
+
+            </iframe>
             <h2>Building Better Habits for Remote Work</h2>
             <p>Practical strategies for staying productive and maintaining 
                 work-life balance in a remote environment.</p>
+                <p><img src="./assets/clock.png"><span style="color:#00ff88 ;">35 min</span></p>
         </div>
         <div class="mediaContent">
-            <iframe src=""> </iframe>
+            <iframe width="380px" height="214px"
+            src="https://www.youtube.com/embed/lg4uP7QjIZk?si=qhe5XkNh1O-_93wt" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+             allowfullscreen> 
+
+
+
+            </iframe>
                 <h2>Career Growth in Tech: A Roadmap</h2>
                 <p>Expert advice on navigating your tech career 
-                    from junior developer to senior leadership roles.</p>   
+                    from junior developer to senior leadership roles.</p>
+                    <p><img src="./assets/clock.png"><span style="color:#00ff88 ;">53 min</span></p>   
         </div>
     </div>
     
@@ -160,41 +203,42 @@ and share stories of personal growth from industry leaders.
             <div class="socialIcon">
 
                 <div class="Socialimg">
-                <img src="./assets/linkedin.png" alt="" srcset="">
+                <a  href="#"><img src="./assets/linkedin.png" alt="" srcset=""></a> 
                 </div>
                 <div class="Socialimg">
-                <img src="./assets/x.png" alt="" srcset="">
+                <a  href="#"><img src="./assets/x.png" alt="" srcset=""></a>
             
                 </div>
                 <div class="Socialimg">
-                <img src="./assets/instagram.png" alt="" srcset="">
+                <a  href="#"><img src="./assets/instagram.png" alt="" srcset=""></a>
                 </div>
                 <div class="Socialimg">
-                <img src="./assets/youtube.png" alt="" srcset="">
+                <a  href="#"><img src="./assets/youtube.png" alt="" srcset=""></a>
                 </div>
         
             </div>
         </div>
     </section>
+ <!-- ==================#FOOTER==================-->   
     <footer class="footer">
         <div class="footerText">
-            <h2>TechWave</h2>
+            <h2>Tech<span style="color: #fb09b4">Wave</span></h2>
             <div class="socialIconFooter">
                 <div class="footerIcon">
                     
-                    <p><img src="./assets/spotify.png" alt="" srcset="">Spotify</p>
+                    <p><a class="btnHover" href="#"> <img src="./assets/spotify.png" alt="" srcset="">Spotify</a></p>
                 </div>
                 <div class="footerIcon">
                     
-                    <p><img src="./assets/apple-podcast.png" alt="" srcset="">Apple Podcasts</p>
+                    <p><a class="btnHover" href="#"><img src="./assets/apple-podcast.png" alt="" srcset="">Apple Podcasts</p></a></p>
                 </div>
                 <div class="footerIcon">
                     
-                    <p><img src="./assets/youtube-podcast.png" alt="" srcset="">YouTube</p>
+                    <p><a class="btnHover" href="#"><img src="./assets/youtube-podcast.png" alt="" srcset="">YouTube</a></p>
                 </div>
                 <div class="footerIcon">
                     
-                    <p><img src="./assets/twitter.png" alt="" srcset="">Twitter</p>
+                    <p><a class="btnHover" href="#"><img src="./assets/twitter.png" alt="" srcset="">Twitter</a></p>
                 </div>
             </div>
             <div class="copyRight">
