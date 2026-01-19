@@ -291,6 +291,11 @@ hr{
     padding: 120px 200px;
     text-align: center;
 }
+.featured h2{
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+}
 .content{
     max-width: 1200px;
     max-height: 538px;
@@ -315,14 +320,107 @@ hr{
 .hostcontent{
     display: flex;
     align-items: center;
+    gap:24px;
 }
 .mediaContent{
     max-width: 380px;
     max-height: 480px;
-    border: 2px solid tomato;
+    /*border: 2px solid tomato;*/
+    border-radius: 15px;
+    background-color:rgba(61, 13, 119, 0.884);
 }
 .mediaContent iframe{
-    max-width: 380px;
+    max-width: 100%;
     max-height: 214px;
     background-color: tomato;
+    border: none;
+    border-radius: 15px;
+}
+.mediaContent h2{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.mediaContent p{
+    text-align: left;padding-left: 24px;
+    padding-right: 24px;
+}
+.host {
+    margin-top: 120px;
+    margin-bottom:40px ;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hostimg img{
+    max-width: 100%;
+}
+.hostcontent {
+     background-color:rgba(61, 13, 119, 0.884);
+     padding: 40px 40px;
+     border-radius: 15px;
+}
+.hostcontent .rightContent{
+    text-align: left;
+}
+.rightContent h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hostcontent .rightContent p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.socialIcon .Socialimg {
+    width:40px;
+    height: 40px;
+    border:1px solid rgba(30, 112, 175, 0.236);
+    border-radius: 50%;
+
+}
+.socialIcon .Socialimg img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+/*  footer css   */
+
+.footer{
+    margin: 0 auto;
+    padding: 120px 120px;
+    background: url(/assets/footer-bg.png);
+    max-width: 100%;
+    height: 412px;
+    text-align: center;
+    color: white;
+
+}
+.footer .footerText h2{
+    font-size:4rem ;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.footerText{
+    position: relative;
+    margin-left: 100px;
+}
+.socialIconFooter{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    margin-left: 300px;
+    margin-bottom: 32px;
+    margin-top: -10px;
+}
+.footerIcon p img{
+    margin-right: 10px;
+}
+.copyRight{
+    margin-left: 130px;
+    font-size: 1rem;
+    font-weight: 400;
 }
