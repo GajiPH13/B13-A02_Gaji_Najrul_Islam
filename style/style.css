@@ -94,44 +94,62 @@ body{
 .baner{
     position: relative;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 1600px;
     width:100%;
     height: 760px;
     background: url(/assets/hero-bg.png);
     background-repeat: no-repeat;
-    text-align: center;
-    display: none;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    
+   
+   /* display: none;*/
 }
 .heroCircle{
-    position: absolute;
-    left: 530px;
     margin: 0 auto;
-    max-width: 550px;
-    max-height:558px;
+    position: relative;
+    max-width:35% ;
+    max-height:auto;
     padding-top: 101px;
-    padding-bottom: 101px;
-    display:block ;
+    /*padding-bottom: 101px;*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
     
 }
-/*.heroCircle img{
-    
-    position: relative;
-    margin-left: 100px;
-}*/
+
+
+
 .heroCircle .microPhone{
-    position: absolute;
-    margin-top: -280px;
-    margin-left: 180px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    top:-270px;
+    
 }
 .heroHeadding{
-    margin-top: 40px;
-    margin-left: 70px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -200px;
+    margin-left: px;
+   padding: 40px;
+    text-align: center;
 }
 
 /*  ========================  Animation of the NEW like heartbeat ================================== */
 #newImg{
     position: absolute;
-    right:60px;
+    top: 90px;
+    left: 230px;
     animation: new 1s ease-in-out infinite;
     transform-origin: center;
 }
@@ -160,6 +178,14 @@ body{
     color:#ffffff;
     margin-left: -50px;
     margin-bottom: 24px;
+    
+}
+.btn{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
     
 }
 .heroBtn1{
@@ -200,12 +226,7 @@ body{
     margin-left: -30px;
     margin-right: 8px;
 }
-.btn{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    
-}
+
 /*================== ABOUT Section =================
 ===================================================== */
 .about{
@@ -396,8 +417,19 @@ hr{
     font-size: 3rem;
     font-weight: bold;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    background-color:rgba(61, 13, 119, 0.884);
+    border-radius: 30px;
+    padding: 40px;
+    text-align: left;
+    align-items: center;
+}
 .hostimg img{
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
 }
 .hostcontent {
      background-color:rgba(61, 13, 119, 0.884);
@@ -405,7 +437,8 @@ hr{
      border-radius: 15px;
 }
 .hostcontent .rightContent{
-    text-align: left;
+   
+    
 }
 .rightContent h3{
     font-size: 2rem;
@@ -415,6 +448,7 @@ hr{
 .hostcontent .rightContent p{
     font-size: 1rem;
     font-weight: 400;
+    line-height: 24px;
 }
 .socialIcon .Socialimg {
     width:40px;
@@ -435,6 +469,8 @@ hr{
     margin: 0 auto;
     padding: 120px 120px;
     background: url(/assets/footer-bg.png);
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
     max-width: 100%;
     height: 412px;
     text-align: center;
@@ -496,15 +532,52 @@ hr{
     }
     
     
-    
-    
+    .baner{
+        padding: auto;
+        max-width: 576px;
+        height: auto;
+        padding: 60px 30px 30px 30px;
+    }
+    .heroCircle{
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heroCircle .img1{
+        width: 120%;
+        margin-right: 0px;
+        margin-bottom: 90px;
+    }
+    .heroCircle .img2{
+       width: 150%;
+    }
+    .microPhone img{
+    width: 30%;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.heroHeadding{
+    margin-top: -280px;
+}
+.heroHeadding h1{
+    font-size: 2rem;
+    font-weight: ;
+}
+    .heroHeadding h1{
+        margin-right: 50px;
+    }
+
+    .heroHeadding p{
+        margin-left: 0px;
+    }
     #newImg{
         position: absolute;
-        left: 350px;
+        left: 150px;
         bottom: 350px;
     }
     .about{
-        padding:30px 30px 0px 40px ;
+        padding:30px 30px 50px 30px ;
     }
     .about .aboutHead{
         text-align: justify;
@@ -528,13 +601,13 @@ hr{
     }
    .gridBox {
         display: grid;
-        grid-template-columns: 1fr; /* one column */
+        grid-template-columns: 1fr; 
         gap: 16px;
         color: white;
         padding: 10px;
     }
 
-    /* Reset all box positioning */
+   
     .gridBox .box1,
     .gridBox .box2,
     .gridBox .box3,
@@ -582,8 +655,12 @@ hr{
     .hostcontent{
         position: relative;
         overflow: hidden;
-        
     }
+    .featured .flex{
+        display: flex;
+        flex-direction: column;
+    } 
+    
     .hostimg{
         background-color:rgba(61, 13, 119, 0.884);
         border-top-left-radius: 20px;  /* top-left corner */
@@ -615,4 +692,5 @@ hr{
         margin-bottom: 32px;
         margin-top: -10px;
 }
+
 }
