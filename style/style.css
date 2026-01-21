@@ -32,11 +32,17 @@ body{
 ===========================================================*/
 .header{
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 1600%;
     height: 92px;
     padding: 16px 200px 16px 200px;
+    background-color: black;
     background: linear-gradient( #1a0b2e, #412567);
-
+    background-size: cover;
+    
+    
+   /* position:fixed;
+    top:92;
+    overflow: hidden;*/
     border-bottom:0.01px solid  #ffffff;
 }
 .header .navBar{
@@ -46,6 +52,11 @@ body{
 }
 .navBar .logo h1{
     color:#ffffff;
+}
+.navBar .logo h1 span{
+    background: linear-gradient( #f7e93f,#fb09b4,#9100f8);
+    background-clip: text;
+    color: transparent;
 }
 
 .navBar .navM{
@@ -57,10 +68,12 @@ body{
     font-size: 1rem;
     font-weight:500 ;
     color: #ffffff;
+   
 }
 .navBar .navM a{
     text-decoration: none;
     color: #ffffff;
+     padding: 5px 10px;
 }
 .btn{
     margin-left: 100px;
@@ -305,15 +318,29 @@ hr{
   gap:40px;
   color: white;
   padding: 20px;
+   
   
 }
-
+.gridBox .box1, .box2, .box3, .box4, .box5{
+    /*background-color:rgba(61, 13, 119, 0.884);*/
+    background-color:rgba(61, 13, 119, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+    padding: 40px;
+    border-radius: 30px;
+}
+.gridBox .box1, .box2, .box3, .box4, .box5:hover{
+    cursor:pointer;
+   
+}
     
 .gridBox .box1{
     max-width: 380px;
     padding: 40px;
     grid-row: 1 / 3;
     color:white;
+    padding-top: 100px;
 }
 
 
@@ -450,12 +477,18 @@ hr{
     font-weight: 400;
     line-height: 24px;
 }
+/*.socialIcon a{
+    padding: 10px;
+}*/
 .socialIcon .Socialimg {
     width:40px;
     height: 40px;
     border:1px solid rgba(30, 112, 175, 0.236);
     border-radius: 50%;
 
+}
+.Socialimg a{
+    text-decoration: none;
 }
 .socialIcon .Socialimg img{
     position: relative;
@@ -481,7 +514,12 @@ hr{
 .footer .footerText h2{
     font-size:4rem ;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
+}
+.footer .footerText h2 span{
+    background: linear-gradient( #f7e93f,#fb09b4,#9100f8);
+    background-clip: text;
+    color: transparent;
 }
 .footerText{
     position: relative;
@@ -495,6 +533,7 @@ hr{
     margin-bottom: 32px;
     margin-top: -10px;
 }
+
 .footerIcon p img{
     margin-right: 10px;
 }
@@ -503,11 +542,12 @@ hr{
     color: #ffffff;
 
 }
-.Socialimg a img:hover{
-    background-color: white;
-    border-radius: 5px;
-    
+.socialIconFooter a{
+    padding: 5px 10px;
 }
+
+    
+
 .copyRight{
     margin-left: 10px;
     font-size: 1rem;
@@ -517,8 +557,11 @@ hr{
 /*=============== Responsive max-width:576px =================*/
 
 @media screen and (max-width:576px) {
+   
     .header{
+        max-width: 100%;
         padding: 16px 20px;
+        width:100vw;
     }
     .navBar .navM{
         display:none;
@@ -533,20 +576,22 @@ hr{
     
     
     .baner{
-        padding: auto;
-        max-width: 576px;
+        max-width: 100%;
+        
         height: auto;
-        padding: 60px 30px 30px 30px;
+        padding: 60px 0px 30px 0px;
     }
     .heroCircle{
         padding-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+       
+        
     }
     .heroCircle .img1{
+        position: relative;
         width: 120%;
-        margin-right: 0px;
         margin-bottom: 90px;
     }
     .heroCircle .img2{
@@ -574,7 +619,7 @@ hr{
     #newImg{
         position: absolute;
         left: 150px;
-        bottom: 350px;
+        top: 2px;
     }
     .about{
         padding:30px 30px 50px 30px ;
@@ -624,7 +669,8 @@ hr{
     .gridBox .box3,
     .gridBox .box4,
     .gridBox .box5{
-        background-color:rgba(61, 13, 119, 0.884);
+        background-color:rgba(61, 13, 119, 0);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 30px;
     }
     
@@ -677,11 +723,13 @@ hr{
         padding-right: 5px;
     }
     .footer{
+        max-width: 100%;
         padding: 40px 20px;
     }
     .footerText{
         margin-left: 50px;
     }
+    
     .socialIconFooter{
         position: relative;
         display: flex;
